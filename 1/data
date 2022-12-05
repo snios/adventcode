@@ -1,6 +1,4 @@
-
-
-txt = """5229
+5229
 1021
 2051
 4766
@@ -2237,23 +2235,4 @@ txt = """5229
 2806
 9293
 9680
-10283"""
-
-array = txt.split("\n")
-
-results = []
-count = 0
-for x in array:
-    if x.isdigit():
-        print("yaay")
-        count += int(x)
-    else:
-        print("nayy", count)
-        results.append(count)
-        count = 0
-
-results.sort()
-
-
-
-print(69359 + 71144+72017)
+10283

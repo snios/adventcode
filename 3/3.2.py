@@ -23,13 +23,9 @@ def solve(data):
         found = findChar(c1, c2)
         total_val +=getValue(found)
 
-    print(total_val)
-    def slice_per(source, step):
-        return [source[i::step] for i in range(step)]
-
-
-    first = backpacks[::1]
-    print(first)
+    chunks = zip(*[iter(backpacks)]*3)
+    for chunk in chunks:
+        print (chunk)
 
 with open('data') as file:
     solve(file.read())

@@ -1,4 +1,3 @@
-from collections import Counter
 import string
 
 def findChar(a: str, b: str):
@@ -11,9 +10,7 @@ def getValue(char: str):
     return val +1
 
 def solve(data):
-
     backpacks = data.split('\n')
-
     total_val = 0
     for x in backpacks:
         c1 = x[0: int(len(x)/2)]
